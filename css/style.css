@@ -1,0 +1,294 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600;1,700&display=swap');
+
+html, body {
+    height: 100%;
+}
+body {
+    font-family: 'Open Sans', sans-serif;
+    overflow: hidden;
+    background:#003952;
+}
+.content-scroll {
+    overflow-y: scroll;
+}
+header .step-wizard {
+    margin-top: 20px;
+}
+header h4 {
+    letter-spacing: 3.2px;
+    color: #0BABF2;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 700;
+}
+header .step-wizard ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: inline-flex;
+    position: relative;
+}
+header .step-wizard ul::after {
+    width: 70%;
+    content: '';
+    position: absolute;
+    top: 12px;
+    border-top: 1px solid #1A4D64;
+    left: 4px;
+    z-index: -1;
+}
+header .step-wizard ul li {
+    background: #1A4D64;
+    border-radius: 50px;
+    font-size: 0;
+    height: 24px;
+    width: 24px;
+    margin-right: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header .step-wizard ul li.active a {
+    height: 16px;
+    width: 16px;
+    border-radius: 50px;
+    background: #fff;
+    display: block;
+}
+.register-wrapper {
+    display: flex;   
+}
+.register-wrapper .form-wrapper {
+    width: 40%;
+    height: 100%;
+    padding: 50px;
+    color: #fff;
+}
+.register-wrapper .right-side {
+    width: 60%;
+    height: 100vh;
+    background: url(../images/bg2.jpg) no-repeat;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-size: 0;
+}
+.register-wrapper .right-side.bg2 {
+    background: url(../images/bg1.jpg) no-repeat;
+    width: 60%;
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-size: 0;
+ }
+
+.register-wrapper .right-side img{
+    height: 100%;
+    width: auto;
+}
+.form-layout {
+    margin-top: 20px;
+}
+.form-body-layout .form-control {
+    background: #1A4D64;
+    height: 48px;
+    border-color:  #1A4D64;
+    border-radius: 5px;
+    color: #fff;
+}
+.form-control.is-invalid, 
+.was-validated .form-control:invalid {
+    border-color: #dc3545 !important;
+}
+.upload-identity .custom-file {
+    height: 48px;
+}
+.upload-identity .custom-file-label{
+    background: #1A4D64;
+    height: 48px;
+    border:  none;
+    border-radius: 5px;
+    color: #fff;    
+    line-height: 35px;
+}
+.upload-identity .custom-file-input {
+    height: 48px;
+}
+.upload-identity .custom-file-label::after {
+    height: 48px;
+    line-height: 35px;
+}
+.form-body-layout .input-group-append .btn {
+    border: none;
+    background: #fff;
+    line-height: 15px;
+}
+.form-body-layout .custom-select {
+    background: #1A4D64;
+    height: 48px;
+    border:  none;
+    border-radius: 5px;
+    color: #fff;
+}
+.form-body-layout .form-control:focus {
+    box-shadow: none;
+    border:  none;
+}
+.form-body-layout hr {
+    border-top: 1px solid #fff;
+    margin: 50px 0;
+    display: block;
+}
+.form-layout .section-title h3 {
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 28px;
+}
+.form-layout .section-title .section-description {
+    font-size: 14px;
+}
+.form-body-layout {
+    margin-top: 40px;
+}
+.form-body-layout > h4 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+.form-caption {
+    font-size: 14px;
+    margin: 30px 0;
+}
+.input-group-append .btn-outline-secondary:hover{
+    color: #003952;
+}
+.btn-primary {
+    color: #fff;
+    background-color: #0BABF2;
+    border-color: #0BABF2;
+}
+.form-footer {
+    margin-top: 20px;
+}
+.form-footer .btn {
+    font-size: 18px;
+    height: 64px;
+    min-width: 193px;
+    border-radius: 75px;
+    padding: .375rem 2rem;
+}
+/* The container */
+.custom-checkbox {
+    display: block;
+    position: relative;
+    padding-left: 45px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  
+  /* Hide the browser's default checkbox */
+  .custom-checkbox input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+  
+  /* Create a custom checkbox */
+  .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 32px;
+    width: 32px;
+    background-color: #1A4D64;
+    border-radius: 3px;
+  }
+  
+  /* On mouse-over, add a grey background color */
+  .custom-checkbox:hover input ~ .checkmark {
+    background-color: #1A4D64;
+  }
+  
+  /* When the checkbox is checked, add a blue background */
+  .custom-checkbox input:checked ~ .checkmark {
+    background-color: #1A4D64;
+  }
+  
+  /* Create the checkmark/indicator (hidden when not checked) */
+  .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+  
+  /* Show the checkmark when checked */
+  .custom-checkbox input:checked ~ .checkmark:after {
+    display: block;
+  }
+  /* Style the checkmark/indicator */
+.custom-checkbox .checkmark:after {
+    left: 12px;
+    top: 5px;
+    width: 9px;
+    height: 17px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+  .resident-checkbox {
+      margin-bottom: 40px;
+  }
+  .form-heading {
+      font-size: 24px;
+      font-weight: 600;
+      margin-bottom: 30px;
+  }
+  .checkbox-list .custom-checkbox{
+      font-size: 16px;
+      margin-bottom: 20px;
+  }
+  .thank-you-content a{
+      color: #fff;
+      text-decoration: underline;
+  }
+  /* RESPONSIVE LAYOUT */
+
+  @media (max-width:1280px) {
+      .form-wrapper {
+          width: 60% !important;
+      }
+      .right-side {
+          width: 40% !important;
+      }
+      .form-layout .section-title h3 {
+        font-size: 28px;
+      }
+      .form-body-layout {
+        font-size: 14px;
+     }
+     .form-footer .btn {
+        font-size: 18px;
+        height: 48px;
+        min-width: 130px;
+    }
+  }
+  @media (max-width:768px) {
+    .right-side {
+        display: none;
+    }
+    .form-wrapper {
+        width: 100% !important;
+    }
+    .register-wrapper .form-wrapper {
+        padding: 20px;
+    }
+  }
